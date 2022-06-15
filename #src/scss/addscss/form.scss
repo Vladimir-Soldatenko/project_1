@@ -1,0 +1,102 @@
+.contact {
+    position: relative;
+}
+.form {
+    position: absolute;
+    bottom: -160px;
+    left: 50%;
+    margin-left: -385px;
+    background: #ffffff;
+    box-shadow: 0px -4px 30px rgba(133, 133, 133, 0.2);
+    width: 770px;
+    transform: translate(0px, 75%);
+    opacity: 0;
+    transition: all 1s;
+    &__border {
+        margin: 0 auto 30px auto;
+        padding-top: 58px;
+        border-bottom: 1px solid #2c4058;
+        width: 100px;
+    }
+    &__title {
+        margin: 0;
+    }
+    &__container {
+        display: flex;
+        &__company {
+            width: 50%;
+            padding: 42px 27px 68px 60px;
+            font-weight: 400;
+            line-height: 28px;
+            font-size: 18px;
+            font-family: "Montserrat", sans-serif;
+            &_info {
+                margin-bottom: 35px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            &_adress::before {
+                content: url("../img/sprite/location.svg");
+                margin-right: 10px;
+            }
+            &_phone::before {
+                content: url("../img/sprite/phone.svg");
+                margin-right: 10px;
+            }
+            &_email::before {
+                content: url("../img/sprite/mail.svg");
+                margin-right: 10px;
+            }
+            &_worktime::before {
+                content: url("../img/sprite/worktime.svg");
+                margin-right: 10px;
+            }
+        }
+        &__user {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            padding: 42px 60px 68px 27px;
+            align-items: flex-end;
+
+            &__button {
+                width: 140px;
+                margin-top: 22px;
+                color: #000000;
+                border: 1px solid #2c4058;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 27px;
+                font-family: "Montserrat";
+                padding: 11px 34px;
+                background: #ffffff;
+                cursor: pointer;
+            }
+        }
+    }
+}
+// ------------------------------------------
+.form.active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+// --------------------------------------------
+.inpt__user {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 33px;
+    height: 40px;
+    border: none;
+    opacity: 0.4;
+    border-bottom: 1px solid #2c4058;
+    color: #000000;
+    font-weight: 400;
+    line-height: 28px;
+    font-size: 18px;
+    width: 100%;
+    &:focus {
+        outline: #2c4058;
+        color: #000000;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #2C4058;
+    font-weight: 400;
+}
+ul,
+ol{
+    list-style: none;
+}
+svg{
+    width: 40px;
+    height: 40px;
+}
+a{
+    text-decoration: none;
+}

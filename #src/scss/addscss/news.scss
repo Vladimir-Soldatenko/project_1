@@ -1,0 +1,52 @@
+.news {
+    background: linear-gradient(45deg,  rgba(36, 204, 250, 0.8), rgba(60, 127, 212, 0.8) ), url('../img/news/background__city.png') center no-repeat;
+    height: 1035px;
+    &__border {
+        display: block;
+        width: 100px;
+        margin: 0 auto 30px auto;
+        padding-top: 100px;
+        border-bottom: #ffffff 1px solid;
+    }
+    &__title {
+        color: #ffffff;
+        margin-bottom: 90px;
+    }
+}
+.user {
+    width: 370px;
+    background: #ffffff;
+    &__card {
+        padding: 30px 20px;
+        &__title {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 27px;
+        }
+        &__desc {
+            font-weight: 400;
+            font-family: "Open Sans", sans-serif;
+            line-height: 25px;
+            margin: 15px 0 40px 0;
+        }
+        &__info {
+            display: flex;
+            &__photo {
+                border-radius: 50%;
+            }
+            &__container{
+                margin: 7px 0 0 20px;
+            }
+            &__name {
+                font-weight: 400;
+                line-height: 22px;
+            }
+            &__date {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #55b7ff;
+            }
+        }
+    }
+}

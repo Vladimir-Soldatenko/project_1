@@ -1,0 +1,204 @@
+@media screen and(max-width: 1180px) {
+    .gallery__flex {
+        flex-direction: column;
+        align-items: center;
+        &__img {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            & img {
+                width: 580px;
+                height: auto;
+                margin-top: 5px;
+            }
+        }
+    }
+    .images {
+        flex-direction: column;
+        &__main {
+            text-align: center;
+            &__photo {
+                height: auto;
+                width: 580px;
+            }
+        }
+        &__all {
+            justify-content: space-around;
+        }
+        &__all img {
+            width: 580px;
+            height: auto;
+        }
+    }
+    .gallery__title {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .nav{
+        display: none;
+    }
+    .burger__menu__btn {
+        display: inline-block;
+    }
+}
+@media screen and(max-width: 1155px) {
+    .header__title{
+        font-size: 55px;
+    }
+    .project {
+        &__title {
+            font-size: 30px;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+        &__paragraph {
+            font-size: 15px;
+        }
+    }
+    .we__do__title {
+        font-size: 30px;
+    }
+    .news__title{
+        font-size: 30px;
+    }
+    .form{
+        &__container {
+            &__company{
+                &_info{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+@media screen and(max-width: 900px) {
+    .header__title{
+        padding-top: 100px;
+    }
+}
+@media screen and(max-width: 850px) {
+    .we__do {
+        margin-bottom: 30px;
+    }
+    .project {
+        margin-bottom: 20px;
+        &__img {
+            width: 480px;
+        }
+        &__description {
+            margin: 50px 0 0 5px;
+        }
+        &__location {
+            margin-top: 30px;
+        }
+    }
+    .project__description__2 {
+        margin: 50px 5px 0 0;
+    }
+}
+@media screen and(max-width: 825px) {
+    .footer {
+        &__wrapper {
+            padding: 205px 15px 0 15px;
+        }
+    }
+}
+@media screen and(max-width: 775px) {
+    .form {
+        width: 380px;
+        bottom: -530px;
+        left: 50%;
+        margin-left: -190px;
+        transform: translate(0 , 0);
+        opacity: 1;
+        &__border{
+            padding-top: 30px;
+        }
+        &__container {
+            flex-direction: column-reverse;
+            &__company{
+                width: 100%;
+                padding: 10px 68px 20px 69px;
+                &_info{
+                    margin-bottom: 10px;
+                }
+            }
+            &__user{
+                padding: 20px 25px 20px 25px;
+                width: 100%;
+                &__button{
+                    margin: 0 auto;
+                    display: block;
+                }
+            }
+        }
+    }
+    .footer {
+       height: 100%;
+       &__wrapper {
+        padding: 580px 15px 35px 15px;
+    }
+    }
+}
+@media screen and(max-width: 660px) {
+    .header__title{
+        padding-top: 255px;
+    }
+    .footer {
+        &__nav {
+            flex-direction: column;
+            &__socials {
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+        &__logo {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+    .copyright {
+        text-align: center;
+    }
+}
+@media screen and(max-width: 580px) {
+    .images {
+        &__main {
+            text-align: center;
+            &__photo {
+                height: auto;
+                width: 380px;
+            }
+        }
+        &__all img {
+            width: 380px;
+            height: auto;
+        }
+    }
+    .gallery__flex__img {
+        width: 380px;
+        height: auto;
+        & img {
+            width: 380px;
+            height: auto;
+        }
+    }
+    .gallery__flex__img_main {
+        width: 380px;
+        height: auto;
+    }
+}
+@media screen and(max-width: 585px) {
+    .project {
+        &__description {
+            margin: 50px 5px 0 5px;
+            padding: 0 15px;
+        }
+    }
+    .project__description__2 {
+        margin: 50px 5px 0 5px;
+        padding: 0 15px;
+    }
+}

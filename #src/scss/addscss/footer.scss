@@ -1,0 +1,31 @@
+.footer {
+    background: linear-gradient(45deg, rgba(85, 183, 255, 0.6), rgba(126, 90, 255, 0.6)),
+        url("../img/footer/footer__bg.png") center no-repeat;
+    height: 530px;
+
+    &__wrapper {
+        max-width: 770px;
+        margin: 0 auto;
+        padding-top: 205px;
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 770px;
+        margin-bottom: 40px;
+    }
+    &__nav__socials {
+        flex-basis: 21%;
+    }
+}
+.copyright {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+}
+.btn__hover:hover {
+    color: #5487d4;
+    border: #5487d4 1px solid;
+    transition: all 0.3s;
+}

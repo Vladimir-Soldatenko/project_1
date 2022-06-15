@@ -1,0 +1,105 @@
+.header {
+    &__nav {
+        padding: 35px 45px 0 45px;
+        margin: 0 auto;
+        padding-top: 53px;
+        z-index: 50;
+    }
+    &__logo {
+        flex-basis: 30%;
+        max-width: 400px;
+        &__img {
+            height: 54px;
+        }
+    }
+    &__title {
+        color: #ffffff;
+        font-size: 80px;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        text-align: center;
+        line-height: 98px;
+        letter-spacing: 10%;
+        padding: 330px 0 0 0;
+        transform: translate(0px, 40%);
+        opacity: 0;
+        transition: all 0.8s;
+    }
+    &__subtitle {
+        font-size: 18px;
+        color: #ffffff;
+        margin: 0 auto;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 0.3em;
+        line-height: 22px;
+        padding: 30px 0 0 0;
+        transform: translate(0px, 150%);
+        opacity: 0;
+        transition: all 0.8s ease 0.4s;
+    }
+}
+.header__title.active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.header__subtitle.active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+.nav {
+    background: linear-gradient(45deg,rgba(85,183,255,.4),rgba(126,90,255,.4));
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    &__menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1100px;
+        flex-basis: 56%;
+        align-items: center;
+        &__item {
+            font-size: 14px;
+            font-family: "Source Sans Pro", sans-serif;
+            color: #ffffff;
+            &:last-child {
+                margin-right: 110px;
+            }
+        }
+        &__item__link {
+            color: #ffffff;
+            &::before {
+                content: url("../img/header/nav__ellipse_standart.png");
+                margin-right: 14px;
+            }
+            &:hover::before {
+                content: url("../img/header/nav_ellipse_hover.png");
+                transition: all 0.5s;
+            }
+        }
+    }
+    &__socials {
+        display: flex;
+        max-width: 250px;
+        flex-basis: 14%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .menu__social__hover:hover{
+            transition: all .3s;
+            background: #464545 ;
+            border-radius: 50%;
+        }
+    }
+}
+
